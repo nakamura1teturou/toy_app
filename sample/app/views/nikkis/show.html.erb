@@ -12,3 +12,5 @@
 
 <%= link_to 'Edit', edit_nikki_path(@nikki) %> |
 <%= link_to 'Back', nikkis_path %>
+<%= link_to '消しゴム',@nikki,method: :delete,data:{confirm:'書いたことをなかったことにしますか？'}%> |
+
