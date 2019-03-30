@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  title: 今日は何もかも嫌で死にたくなる日
+  body: すべてがメンドクサイ
+
+two:
+  title: 彼女とモヤモヤ
+  body: 嫌な気分

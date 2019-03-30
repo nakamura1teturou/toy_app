@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @nikki.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @nikki.body %>
+</p>
+
+<%= link_to 'Edit', edit_nikki_path(@nikki) %> |
+<%= link_to 'Back', nikkis_path %>

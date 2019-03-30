@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nikkis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>ﾀｲﾄﾙ</th>
+      <th>登録日時</th>
+      <th>更新日時</th>
+      <th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nikkis.each do |nikki| %>
+      <tr>
+        <td><%= nikki.id %></td>
+        <td><%= link_to nikki.title,nikki%></td>
+        <td><%= nikki.created_at %></td>
+        <td><%= nikki.updated_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '今日を記述しましょう', new_nikki_path %>
